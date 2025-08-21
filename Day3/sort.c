@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 int main(){
-    int size,arr[100],;
+    int size,arr[100];
     scanf("%d",&size);
     for(int i=0 ; i<size ;++i)
         scanf("%i",&arr[i]);
@@ -12,9 +12,9 @@ int main(){
         printf("%d ",arr[i]);
     
     //sorting logic
-    for(int i=0;i<n;i++){
+    for(int i=0;i<size;i++){
         int temp=i;
-        for(int j=i+1;j<n;j++){
+        for(int j=i+1;j<size;j++){
             if(arr[j]<arr[temp])
                 temp=j;
         }
@@ -25,7 +25,7 @@ int main(){
         }
     }
 
-    printf("array contents after sort are:\n");
+    printf("\narray contents after sort are:\n");
     for(int i=0 ; i<size ;i++)
         printf("%d ",arr[i]);
 }       
