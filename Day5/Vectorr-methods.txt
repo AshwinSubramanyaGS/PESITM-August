@@ -1,0 +1,28 @@
+C++ std::vector provides a rich set of member functions (methods) for managing dynamic arrays. These methods can be categorized based on their functionality:
+1. Capacity and Size:
+size(): Returns the number of elements in the vector.
+max_size(): Returns the maximum number of elements the vector can hold.
+capacity(): Returns the current allocated storage capacity of the vector. 
+empty(): Checks if the vector is empty (returns true if size is 0, false otherwise).
+reserve(n): Requests that the vector capacity be at least n.
+shrink_to_fit(): Reduces the capacity of the vector to its actual size.
+2. Element Access:
+operator[]: Provides direct access to elements using an index (no bounds checking).
+at(pos): Provides access to elements with bounds checking; throws std::out_of_range if pos is invalid.
+front(): Returns a reference to the first element.
+back(): Returns a reference to the last element.
+data(): Returns a pointer to the underlying array.
+3. Modifiers:
+push_back(val): Adds an element to the end of the vector.
+pop_back(): Removes the last element from the vector.
+insert(pos, val): Inserts an element val before the element at pos. Overloaded versions exist for inserting multiple elements or a range.
+erase(pos): Removes the element at pos. Overloaded versions exist for removing a range of elements.
+clear(): Removes all elements from the vector.
+assign(count, val): Assigns new contents to the vector, replacing current elements.
+swap(other_vector): Swaps the contents of two vectors.
+4. Iterators:
+begin(): Returns an iterator to the first element.
+end(): Returns an iterator to the element theoretically following the last element. 
+rbegin(): Returns a reverse iterator to the last element.
+rend(): Returns a reverse iterator to the element theoretically preceding the first element. 
+cbegin(), cend(), crbegin(), crend(): Constant versions of the above iterators.
